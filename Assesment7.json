@@ -10,10 +10,10 @@
     "adaptGameResolutionAtRuntime": true,
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
-    "folderProject": false,
+    "folderProject": true,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "pixelsRounding": false,
+    "pixelsRounding": true,
     "projectUuid": "0470b152-f647-464a-a3a6-16c658a2a870",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
@@ -28,7 +28,35 @@
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -62,7 +90,348 @@
     "currentPlatform": "GDevelop JS platform"
   },
   "resources": {
-    "resources": [],
+    "resources": [
+      {
+        "file": "ninja_idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ninja_idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja_idle.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ninja_idle",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Platform-Tiles16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Platform-Tiles16.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja_idle2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/ninja_idle2.png\"}",
+        "name": "ninja_idle2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja_idle3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/ninja_idle3.png\"}",
+        "name": "ninja_idle3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja_idle4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/ninja_idle4.png\"}",
+        "name": "ninja_idle4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite3.png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite4.png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Platform-Tiles32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Platform-Tiles32.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Green Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/bff6adc488c7379b21ceba34e9104e861791b2fbb54b4aae167fe90115b92fa3_Green Button_Hovered.png",
+          "name": "Green Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Green Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f46d20e99495562ee66ee2f26defdb0788588184bd30b1f7b951ae728ce63d2a_Green Button_Idle.png",
+          "name": "Green Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Green Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ecb33703984d3107196efce7335025d7ec104351fe8cdeb581c73fe0b8038c34_Green Button_Pressed.png",
+          "name": "Green Button_Pressed.png"
+        }
+      },
+      {
+        "file": "Platform-Tiles33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Platform-Tiles33.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Platform-Tiles34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Platform-Tiles34.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite6.png\"}",
+        "name": "NewSprite6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Flat Bar Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
+          "name": "Flat Bar Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "file": "assets/Tiles2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tiles2.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Paper Pixels Platformer/Tilemap/05392d263ed46c981605f8131111be852dcac36f913f77672996732f86f20031_Tiles2.png",
+          "name": "Tiles2.png"
+        }
+      },
+      {
+        "file": "assets/DungeonTileset.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DungeonTileset.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Dungeon Tileset/Tilemap/f469d4ca0e9db04881240e083c902868979588fa9b36e7017c19f4f111b6189c_DungeonTileset.png",
+          "name": "DungeonTileset.png"
+        }
+      },
+      {
+        "file": "assets/monochrome_tilemap_transparent_packed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "monochrome_tilemap_transparent_packed.png",
+        "smoothed": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Tilemaps/Pixel Art/7da13c10c28bc5ec3e8ceed7c1b980cf019b26e4a5ea7bba589be1b248f06b85_monochrome_tilemap_transparent_packed.png",
+          "name": "monochrome_tilemap_transparent_packed.png"
+        }
+      },
+      {
+        "file": "ninja-Sheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ninja-Sheet.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja-Sheet.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ninja-Sheet",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja-Sheet2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ninja-Sheet2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja-Sheet3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ninja-Sheet3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja-Sheet4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ninja-Sheet4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ninja-Sheet5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ninja-Sheet5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cloud 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cloud 1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Background Objects/Retina/85b0e6d046a9a1e13436b94863721bd6ba25a1f3e898802ce3e0df53d4b16fe6_cloud 1.png",
+          "name": "cloud 1.png"
+        }
+      },
+      {
+        "file": "Sprite-0001.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Sprite-0001.png\",\"extension\":\".png\"}",
+        "name": "Sprite-0001.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite11.png\"}",
+        "name": "NewSprite11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": true,
+        "userAdded": false
+      }
+    ],
     "resourceFolders": []
   },
   "objects": [],
@@ -71,8 +440,66 @@
   },
   "objectsGroups": [],
   "variables": [],
-  "layouts": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/testing"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/assesment"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/part8"
+    }
+  ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/behaviorremapper"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/platformercharacteranimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/advancedjump"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/animationsystem"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    }
+  ],
   "externalLayouts": []
 }

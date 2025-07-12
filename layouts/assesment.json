@@ -1,0 +1,707 @@
+{
+  "b": 5,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Assesment",
+  "name": "Assesment",
+  "r": 14,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 11,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 8,
+    "gridHeight": 8,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.993443349825965,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "PaperPixels_8x8",
+      "persistentUuid": "99810c12-5ac8-4f2e-8230-230ec62e0259",
+      "width": 0,
+      "x": 0,
+      "y": 453,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":8,\"tileHeight\":8,\"dimX\":41,\"dimY\":24,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40],[40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,720,721,722,723,724,40,40],[40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1008,-1,-1,-1,-1,-1,-1,-1],[40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1026,-1,-1,-1,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40,-1,-1,-1,40,-1,-1,-1,-1,-1,-1,-1,60,40,61,-1,1044,-1,-1,-1,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,435,436,437,436,438,-1,-1,135,135,135,135,225,225,225,225,225,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,453,454,455,454,456,-1,-1,40,243,40,153,225,225,225,225,225,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,470,471,472,473,472,474,40,-1,-1,-1,243,243,225,225,225,225,225,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,315,315,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,488,-1,-1,-1,-1,-1,40,-1,40,-1,-1,-1,225,225,225,225,225,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,505,-1,40,-1,-1,-1,-1,40,-1,-1,-1,-1,-1,225,225,225,225,225,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,523,-1,-1,-1,-1,-1,-1,40,-1,-1,-1,-1,-1,225,225,225,225,225,-1,-1,-1,-1],[-1,40,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,97,541,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,225,225,225,225,225,-1,-1,-1,-1],[-1,-1,702,702,703,704,705,706,707,708,709,710,703,704,705,706,707,708,711,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,40,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]}]}"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "character",
+      "persistentUuid": "ef419835-bf2b-450b-9a5a-26a854791a8d",
+      "width": 0,
+      "x": 91,
+      "y": 553,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 60,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite",
+      "persistentUuid": "385ef417-7135-44ab-b16f-3bd7ef5f915c",
+      "width": 1637,
+      "x": -233,
+      "y": 583,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "6e19f7cdc0440a809d5b94deb13feececbc0df4d0afe9389040637399b2615be",
+      "name": "PaperPixels_8x8",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
+      "content": {
+        "atlasImage": "Tiles2.png",
+        "rowCount": 82,
+        "columnCount": 18,
+        "tileSize": 8,
+        "tilesWithHitBox": "1405,1406,1407,1408,1409,1410,1411,1412,1422,1423,1424,1425,1426,1427,1428,1429,1430,1431,1173,1174,1175,1176,1190,1191,1192,1193,1194,1195,1213,1208,1225,1226,1243,1261,1231,1232,1250,1268,1063,1064,1065,1066,1062,111,112,113,114,128,129,130,131,132,133,146,151,163,164,181,199,169,170,188,206,342,343,344,345,346,347,348,349,350,351,453,454,455,456,470,471,472,473,474,475,488,505,506,507,165,168,1227,1230,865,866,867,883,901,871,872,890,908,870,830,831,832,848,833,834,835,853,813,814,815,816,702,703,704,705,706,707,708,709,710,711,510,511,512,530,548,523,541,304,322,340,305,323,341,720,721,722,723,724,725,726,727,728,729,135"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "character",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "AnimationBehavior",
+          "type": "AnimationSystem::AnimationBehavior"
+        },
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
+          "name": "PixelPerfectPlatformerCharacter",
+          "type": "PixelPerfectMovement::PixelPerfectPlatformerCharacter",
+          "PlatformerCharacter": "PlatformerObject",
+          "PixelSize": 1,
+          "OffsetX": 0,
+          "OffsetY": 0,
+          "TargetX": 0,
+          "TargetDirectionX": 0,
+          "TargetY": 0,
+          "TargetDirectionY": 0,
+          "PreviousSpeedX": 2.0247e-320,
+          "IsDecelerating": false
+        },
+        {
+          "isFolded": true,
+          "name": "PlatformerCharacterAnimator",
+          "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+          "EnableAnimationChanges": true,
+          "EnableHorizontalFlipping": true,
+          "IdleAnimationName": "idle",
+          "RunAnimationName": "walk",
+          "JumpAnimationName": "Jump",
+          "FallAnimationName": "Fall",
+          "ClimbAnimationName": "Climb",
+          "PlatformerBehavior": "PlatformerObject",
+          "Animation": "Animation",
+          "Flippable": "Flippable"
+        },
+        {
+          "isFolded": true,
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "acceleration": 150,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "canGrabWithoutMoving": true,
+          "deceleration": 150,
+          "gravity": 1000,
+          "ignoreDefaultControls": false,
+          "jumpSpeed": 200,
+          "jumpSustainTime": 0.2,
+          "ladderClimbingSpeed": 150,
+          "maxFallingSpeed": 100,
+          "maxSpeed": 250,
+          "slopeMaxAngle": 60,
+          "useLegacyTrajectory": false,
+          "useRepeatedJump": false,
+          "xGrabTolerance": 10,
+          "yGrabOffset": 0
+        },
+        {
+          "isFolded": true,
+          "name": "RemapForPlatformer",
+          "type": "BehaviorRemapper::RemapForPlatformer",
+          "Up": "w",
+          "Left": "a",
+          "Down": "s",
+          "Right": "d",
+          "Jump": "Up",
+          "Platformer": "PlatformerObject"
+        },
+        {
+          "isFolded": true,
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9,
+          "RightwardSpeed": 0.9,
+          "UpwardSpeed": 0.9,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": true,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 2.0247e-320,
+          "LogRightwardSpeed": 2.0247e-320,
+          "LogDownwardSpeed": 2.0247e-320,
+          "LogUpwardSpeed": 2.0247e-320,
+          "DelayedCenterX": 2.0247e-320,
+          "DelayedCenterY": 2.0247e-320,
+          "ForecastHistoryMeanX": 2.0247e-320,
+          "ForecastHistoryMeanY": 2.0247e-320,
+          "ForecastHistoryVarianceX": 2.0247e-320,
+          "ForecastHistoryCovariance": 2.0247e-320,
+          "ForecastHistoryLinearA": 2.0247e-320,
+          "ForecastHistoryLinearB": 2.0247e-320,
+          "ForecastedX": 2.0247e-320,
+          "ForecastedY": 2.0247e-320,
+          "ProjectedNewestX": 2.0247e-320,
+          "ProjectedNewestY": 2.0247e-320,
+          "ProjectedOldestX": 2.0247e-320,
+          "ProjectedOldestY": 2.0247e-320,
+          "ForecastHistoryVarianceY": 2.0247e-320,
+          "Index": 2.0247e-320,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 2.0247e-320,
+          "WaitingSpeedXMax": 2.0247e-320,
+          "WaitingSpeedYMax": 2.0247e-320,
+          "WaitingEnd": 2.0247e-320,
+          "CameraDelayCatchUpDuration": 2.0247e-320,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000.000000007454,
+          "OldY": 9000.000000007454,
+          "IsCalledManually": false
+        },
+        {
+          "isFolded": true,
+          "name": "SmoothPlatformerCamera",
+          "type": "SmoothCamera::SmoothPlatformerCamera",
+          "PlatformerCharacter": "PlatformerObject",
+          "SmoothCamera": "SmoothCamera",
+          "JumpOriginY": 0,
+          "AirFollowFreeAreaTop": 0,
+          "AirFollowFreeAreaBottom": 0,
+          "FloorFollowFreeAreaTop": 0,
+          "FloorFollowFreeAreaBottom": 0,
+          "AirUpwardSpeed": 0.95,
+          "AirDownwardSpeed": 0.95,
+          "FloorUpwardSpeed": 0.9,
+          "FloorDownwardSpeed": 0.9,
+          "AirUpwardSpeedMax": 9000,
+          "AirDownwardSpeedMax": 9000,
+          "FloorUpwardSpeedMax": 9000,
+          "FloorDownwardSpeedMax": 9000
+        }
+      ],
+      "animations": [
+        {
+          "name": "idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sprite-0001.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 7,
+                        "y": 1
+                      },
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 1,
+                        "y": 7
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 7,
+                        "y": 1
+                      },
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 1,
+                        "y": 7
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite9",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 7,
+                        "y": 1
+                      },
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 1,
+                        "y": 7
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite11",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "PaperPixels_8x8"
+      },
+      {
+        "objectName": "character"
+      },
+      {
+        "objectName": "NewSprite"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "4",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
+            "",
+            "=",
+            "character.Y()-50",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimationSystem::AnimationBehavior::AnimationSystem"
+          },
+          "parameters": [
+            "character",
+            "AnimationBehavior",
+            "\"Rainbow effect\"",
+            "0.03",
+            "8",
+            "8",
+            "no",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "character",
+            "NewSprite",
+            ">=",
+            "5",
+            "no"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Flash::Flash::Flash"
+          },
+          "parameters": [
+            "character",
+            "Flash",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "character",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Assesment\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "AnimationBehavior",
+      "type": "AnimationSystem::AnimationBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flash",
+      "type": "Flash::Flash"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "PixelPerfectPlatformerCharacter",
+      "type": "PixelPerfectMovement::PixelPerfectPlatformerCharacter"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "PlatformerCharacterAnimator",
+      "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RemapForPlatformer",
+      "type": "BehaviorRemapper::RemapForPlatformer"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "SmoothPlatformerCamera",
+      "type": "SmoothCamera::SmoothPlatformerCamera"
+    }
+  ]
+}
