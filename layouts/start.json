@@ -1,8 +1,8 @@
 {
   "b": 5,
   "disableInputWhenNotFocused": true,
-  "mangledName": "fail",
-  "name": "fail",
+  "mangledName": "start",
+  "name": "start",
   "r": 14,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -28,14 +28,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 124,
+      "height": 400,
       "keepRatio": true,
       "layer": "",
       "name": "sucess",
       "persistentUuid": "f445f52d-a53b-449e-8fab-f46467a867cb",
-      "width": 603,
-      "x": 329,
-      "y": 205,
+      "width": 1100,
+      "x": 78,
+      "y": 344,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -45,32 +45,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 48,
-      "height": 104,
+      "height": 139,
       "keepRatio": true,
       "layer": "",
       "name": "Transparent_Button_With_White_Blue_Border",
-      "persistentUuid": "94d4b113-b5e3-4745-afaa-b5d63f3cf5b4",
-      "width": 296,
-      "x": 441,
-      "y": 389,
+      "persistentUuid": "47c2e92d-c235-43b2-b531-b06ae18bc95e",
+      "width": 295,
+      "x": 830,
+      "y": 512,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 112,
-      "keepRatio": true,
-      "layer": "",
-      "name": "sucess2",
-      "persistentUuid": "781acde1-1f17-4ee2-a8b6-b916c0478e73",
-      "width": 747,
-      "x": 259,
-      "y": 638,
-      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -87,19 +70,11 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "Flash",
-          "type": "Flash::Flash",
-          "HalfPeriodTime": 0.3,
-          "IsFlashing": false,
-          "FlashDuration": 0
-        }
-      ],
-      "string": "You Lose ;(",
+      "behaviors": [],
+      "string": "1. wasd or arrow key to move. space bar to jump \n\n2. press \"E\" to pick up or dispose stone\n\n3. you can pick up more than 1 rock\n\n4. earn the rocks by disposing the 10 stone at the goal\n\n5. return to the base every 40 seconds or you will lose\n\n6. trees can be climb\n\n7. use the teleport\n\nGoodluck!",
       "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 100,
+      "characterSize": 40,
       "color": {
         "b": 179,
         "g": 179,
@@ -119,11 +94,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "You Lose ;(",
+        "text": "1. wasd or arrow key to move. space bar to jump \n\n2. press \"E\" to pick up or dispose stone\n\n3. you can pick up more than 1 rock\n\n4. earn the rocks by disposing the 10 stone at the goal\n\n5. return to the base every 40 seconds or you will lose\n\n6. trees can be climb\n\n7. use the teleport\n\nGoodluck!",
         "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 100,
+        "characterSize": 40,
         "color": "179;179;179"
       }
     },
@@ -134,7 +109,15 @@
       "variant": "",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.3,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        }
+      ],
       "content": {
         "LeftPadding": 0,
         "RightPadding": 0,
@@ -169,14 +152,14 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "Play Again",
+          "string": "PLAY",
           "font": "Kenney Mini Square.ttf",
           "textAlignment": "center",
-          "characterSize": 45,
+          "characterSize": 80,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 179,
+            "g": 179,
+            "r": 179
           },
           "content": {
             "bold": false,
@@ -192,12 +175,12 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Play Again",
+            "text": "PLAY",
             "font": "Kenney Mini Square.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 45,
-            "color": "255;255;255"
+            "characterSize": 80,
+            "color": "179;179;179"
           }
         },
         "Pressed": {
@@ -211,48 +194,6 @@
           "width": 192
         }
       }
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "sucess2",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Tips: you can fall off into the space and respawn at the base when you are running out of time.",
-      "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 179,
-        "g": 179,
-        "r": 179
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Tips: you can fall off into the space and respawn at the base when you are running out of time.",
-        "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "center",
-        "characterSize": 20,
-        "color": "179;179;179"
-      }
     }
   ],
   "objectsFolderStructure": {
@@ -260,9 +201,6 @@
     "children": [
       {
         "objectName": "sucess"
-      },
-      {
-        "objectName": "sucess2"
       },
       {
         "objectName": "Transparent_Button_With_White_Blue_Border"
@@ -279,7 +217,7 @@
             "value": "Flash::Flash::Flash"
           },
           "parameters": [
-            "sucess",
+            "Transparent_Button_With_White_Blue_Border",
             "Flash",
             "0",
             ""
