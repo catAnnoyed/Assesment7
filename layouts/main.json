@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 6.363767901622411,
+    "zoomFactor": 2.5991525916797404,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -429,22 +429,6 @@
       "x": 277,
       "y": 449,
       "zOrder": 24,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "rock",
-      "persistentUuid": "e79ababc-cf7d-4541-a5f7-ea59c965b0ad",
-      "width": 0,
-      "x": 303,
-      "y": 480,
-      "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
