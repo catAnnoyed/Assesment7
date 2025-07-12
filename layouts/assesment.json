@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 3.7433928833072185,
+    "zoomFactor": 2.599152591679685,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -27,6 +27,16 @@
       "name": "Rocknum",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "breakflag",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Variable",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -93,8 +103,8 @@
       "name": "rock",
       "persistentUuid": "c1d13668-39a2-46a5-9743-79cfb5b5fb51",
       "width": 0,
-      "x": 188,
-      "y": 505,
+      "x": 133,
+      "y": 557,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -127,6 +137,55 @@
           "value": 0
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 55,
+      "keepRatio": true,
+      "layer": "score and time",
+      "name": "NewText",
+      "persistentUuid": "7e8f02a3-ffe5-4874-9d3d-ba56b7a0839c",
+      "width": 101,
+      "x": 1110,
+      "y": 74,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "rock",
+      "persistentUuid": "eb018512-4aa5-42ee-9754-cddc8b1e1ecc",
+      "width": 0,
+      "x": 122,
+      "y": 560,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "rock",
+      "persistentUuid": "03fd1116-332a-4a13-9901-4eddf5c0bfa0",
+      "width": 0,
+      "x": 139,
+      "y": 560,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -203,7 +262,8 @@
           "Flippable": "Flippable"
         },
         {
-          "isFolded": true,
+          "jumpSpeed": 200,
+          "maxSpeed": 200,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "acceleration": 150,
@@ -213,11 +273,9 @@
           "deceleration": 150,
           "gravity": 1000,
           "ignoreDefaultControls": false,
-          "jumpSpeed": 200,
           "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 100,
-          "maxSpeed": 250,
           "slopeMaxAngle": 60,
           "useLegacyTrajectory": false,
           "useRepeatedJump": false,
@@ -543,7 +601,12 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "AnimationBehavior",
+          "type": "AnimationSystem::AnimationBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "rock",
@@ -610,7 +673,12 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "rock",
@@ -662,6 +730,109 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite14",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 8
+                      },
+                      {
+                        "x": 47,
+                        "y": 8
+                      },
+                      {
+                        "x": 47,
+                        "y": 63
+                      },
+                      {
+                        "x": 4,
+                        "y": 63
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -684,6 +855,12 @@
       },
       {
         "objectName": "rockfollow"
+      },
+      {
+        "objectName": "NewText"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },
@@ -765,11 +942,13 @@
         },
         {
           "type": {
-            "value": "Scene"
+            "value": "Create"
           },
           "parameters": [
             "",
-            "\"Assesment\"",
+            "character",
+            "91",
+            "553",
             ""
           ]
         }
@@ -780,72 +959,235 @@
       "conditions": [
         {
           "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "rock",
-            "character",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
+            "value": "KeyFromTextReleased"
           },
           "parameters": [
             "",
             "\"e\""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "SetNumberVariable"
+            "value": "SetBooleanVariable"
           },
           "parameters": [
-            "Rocknum",
-            "+",
-            "1"
+            "breakflag",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "rock",
+                "character",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Rocknum",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "rockfollow",
+                "variable",
+                "=",
+                "Rocknum"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "rockfollow",
+                "character.CenterX()",
+                "character.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "rock",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "breakflag",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Rocknum",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "rock",
+                "character",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "breakflag",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Rocknum",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "rock",
+                "character.CenterX()+5",
+                "character.CenterY()-1",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "rockfollow",
+            "Tween",
+            "\"move\"",
+            "character.CenterX()+(3*rockfollow.Variable(variable))",
+            "character.CenterY()",
+            "\"linear\"",
+            "1",
+            ""
           ]
         },
         {
           "type": {
-            "value": "SetNumberObjectVariable"
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "rock",
-            "variable",
+            "NewText",
+            "Text",
             "=",
+            "Rocknum +\"  \"+ToString(SceneInstancesCount(rock))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneInstancesCount"
+          },
+          "parameters": [
+            "",
+            "rockfollow",
+            ">",
+            "Rocknum"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "rockfollow",
+            "variable",
+            ">=",
             "Rocknum"
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"e\""
-          ]
-        }
       ],
       "actions": [
         {
           "type": {
-            "value": "SetNumberVariable"
+            "value": "Delete"
           },
           "parameters": [
-            "Rocknum",
-            "-",
-            "1"
+            "rockfollow",
+            ""
           ]
         }
       ]
@@ -911,6 +1253,55 @@
           }
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "score and time",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -925,6 +1316,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "EllipseMovement",
+      "type": "EllipseMovement::EllipseMovement"
     },
     {
       "name": "Flash",
@@ -973,6 +1368,14 @@
     {
       "name": "SmoothPlatformerCamera",
       "type": "SmoothCamera::SmoothPlatformerCamera"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
