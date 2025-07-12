@@ -430,6 +430,14 @@
         "name": "NewSprite12",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
