@@ -468,6 +468,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/NewSprite15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite15.png\"}",
+        "name": "NewSprite15",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -490,6 +498,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/part8"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/sucess"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fail"
     }
   ],
   "externalEvents": [],
