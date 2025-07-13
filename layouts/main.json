@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 2.5991525916797404,
+    "zoomFactor": 0.4633111824514144,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -128,9 +128,9 @@
       "layer": "score and time",
       "name": "rockstat",
       "persistentUuid": "7e8f02a3-ffe5-4874-9d3d-ba56b7a0839c",
-      "width": 263,
-      "x": 971,
-      "y": 26,
+      "width": 380,
+      "x": 949,
+      "y": 68,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -945,9 +945,9 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": false,
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
           "platformType": "Ladder",
           "yGrabOffset": 0
         }
@@ -1125,7 +1125,7 @@
       "string": "Rock",
       "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 30,
+      "characterSize": 35,
       "color": {
         "b": 145,
         "g": 145,
@@ -1149,7 +1149,7 @@
         "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 30,
+        "characterSize": 35,
         "color": "145;145;145"
       }
     },
@@ -1346,10 +1346,10 @@
           "OldY": 2.0247e-320
         },
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
       ]
@@ -1497,6 +1497,18 @@
           ],
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "pickup rocks"
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1566,6 +1578,18 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "dispose rocks"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1650,8 +1674,30 @@
                 "1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "rockfollow",
+                "rockfollow",
+                ""
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "make sure the amount of rock following is correct"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1695,7 +1741,18 @@
       "parameters": []
     },
     {
-      "folded": true,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "repawn caracter at start when fall of platform"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1733,23 +1790,22 @@
             ""
           ]
         }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "repawn caracter at start"
-        }
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "teleport"
+    },
+    {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2065,33 +2121,6 @@
       "conditions": [
         {
           "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "finalrock",
-            "=",
-            "10"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"sucess\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
             "value": "CompareTimer"
           },
           "parameters": [
@@ -2111,34 +2140,6 @@
             "",
             "\"fail\"",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "rockstat",
-            "Text",
-            "=",
-            "\"Rock holding: \"+Rocknum +\"\nRock earned: \"+finalrock"
-          ]
-        },
-        {
-          "type": {
-            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-          },
-          "parameters": [
-            "timer",
-            "Text",
-            "=",
-            "\"time: \"+ToString(trunc(45-TimerElapsedTime(\"mainTimer\")))"
           ]
         }
       ]
@@ -2167,6 +2168,61 @@
           "parameters": [
             "",
             "\"mainTimer\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "finalrock",
+            "=",
+            "10"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"sucess\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "rockstat",
+            "Text",
+            "=",
+            "\"rock holding: \"+Rocknum +\"\nrock earned: \"+finalrock"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "timer",
+            "Text",
+            "=",
+            "\"time: \"+ToString(trunc(45-TimerElapsedTime(\"mainTimer\")))"
           ]
         }
       ]
