@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4633111824514144,
+    "zoomFactor": 0.9296875000000329,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -60,6 +60,11 @@
     },
     {
       "name": "finalrock",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "i",
       "type": "number",
       "value": 0
     }
@@ -973,7 +978,21 @@
           "value": 0
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 1,
+            "innerStrength": 0,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "247;242;246"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "AnimationBehavior",
@@ -1459,7 +1478,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "rock",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1499,12 +1517,12 @@
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
+                "b": 125,
+                "g": 158,
+                "r": 187,
+                "textB": 255,
+                "textG": 255,
+                "textR": 255
               },
               "comment": "pickup rocks"
             },
@@ -1530,51 +1548,98 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Rocknum",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "rockfollow",
-                    "variable",
+                    "i",
                     "=",
-                    "Rocknum"
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "infiniteLoopWarning": true,
+                  "type": "BuiltinCommonInstructions::While",
+                  "whileConditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "i",
+                        "<",
+                        "PickedInstancesCount(rock)"
+                      ]
+                    }
+                  ],
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Rocknum",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "rockfollow",
+                        "character.CenterX()",
+                        "character.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "rockfollow",
+                        "variable",
+                        "=",
+                        "Rocknum"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "i",
+                        "+",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "rockfollow",
-                    "character.CenterX()",
-                    "character.CenterY()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "rock",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "breakflag",
-                    "False",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "rock",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "breakflag",
+                        "False",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2211,7 +2276,7 @@
             "rockstat",
             "Text",
             "=",
-            "\"rock holding: \"+Rocknum +\"\nrock earned: \"+finalrock"
+            "\"stones holding: \"+Rocknum +\"\nstones earned: \"+finalrock"
           ]
         },
         {
