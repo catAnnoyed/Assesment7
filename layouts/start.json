@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.3216911764705889,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "layer": "",
       "name": "sucess",
       "persistentUuid": "f445f52d-a53b-449e-8fab-f46467a867cb",
-      "width": 1148,
-      "x": 87,
+      "width": 1196,
+      "x": 77,
       "y": 364,
       "zOrder": 2,
       "numberProperties": [],
@@ -51,9 +51,41 @@
       "name": "Transparent_Button_With_White_Blue_Border",
       "persistentUuid": "47c2e92d-c235-43b2-b531-b06ae18bc95e",
       "width": 295,
-      "x": 687,
-      "y": 537,
+      "x": 576,
+      "y": 539,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SquareWhiteSlider",
+      "persistentUuid": "84fd0a7d-8bc3-4d41-8a65-2384b1d744e0",
+      "width": 0,
+      "x": 949,
+      "y": 624,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sucess2",
+      "persistentUuid": "56ed6216-909b-4480-be24-e4cd97386b14",
+      "width": 0,
+      "x": 941,
+      "y": 587,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -71,7 +103,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "1. wasd or arrow key to move. space bar to jump \n\n2. press \"E\" to pick up or dispose stone\n\n3. you can pick up more than 1 stone\n\n4. earn the stones by disposing the stone at the goal\n\n5. win the game by earning 10 stones\n\n6. return to the goal every 45 seconds or you will lose\n\n7. if you dispose the stones at weird places its your fault\n\n8. trees can be climb\n\n9. use the teleport\n\nGoodluck!",
+      "string": "1. wasd or arrow key to move. space bar to jump \n\n2. press \"E\" to pick up or dispose stone\n\n3. you can set difficulty by limiting the amount of stones able to hold at once\n\n4. earn the stones by disposing the stone at the goal\n\n5. win the game by earning 10 stones\n\n6. return to the goal every 45 seconds or you will lose\n\n7. if you dispose the stones at weird places its your fault\n\n8. trees can be climb\n\n9. use the teleport\n\nGoodluck!",
       "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 40,
@@ -94,7 +126,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "1. wasd or arrow key to move. space bar to jump \n\n2. press \"E\" to pick up or dispose stone\n\n3. you can pick up more than 1 stone\n\n4. earn the stones by disposing the stone at the goal\n\n5. win the game by earning 10 stones\n\n6. return to the goal every 45 seconds or you will lose\n\n7. if you dispose the stones at weird places its your fault\n\n8. trees can be climb\n\n9. use the teleport\n\nGoodluck!",
+        "text": "1. wasd or arrow key to move. space bar to jump \n\n2. press \"E\" to pick up or dispose stone\n\n3. you can set difficulty by limiting the amount of stones able to hold at once\n\n4. earn the stones by disposing the stone at the goal\n\n5. win the game by earning 10 stones\n\n6. return to the goal every 45 seconds or you will lose\n\n7. if you dispose the stones at weird places its your fault\n\n8. trees can be climb\n\n9. use the teleport\n\nGoodluck!",
         "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
@@ -194,6 +226,136 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "SquareWhiteSlider",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6,
+        "InitialValue": 2,
+        "MinValue": 1,
+        "MaxValue": 10,
+        "ShowLabelAtChanges": true
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 28,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Square White Slider Border.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 265
+        },
+        "FillBar": {
+          "bottomMargin": 2,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Square White Slider Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Number of stones able to hold",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Number of stones able to hold",
+            "font": "",
+            "textAlignment": "",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 2,
+          "height": 36,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "Square White Slider Thumb.png",
+          "tiled": false,
+          "topMargin": 2,
+          "width": 22
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "sucess2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Number of stones able to hold",
+      "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 179,
+        "g": 179,
+        "r": 179
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Number of stones able to hold",
+        "font": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 20,
+        "color": "179;179;179"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -203,7 +365,13 @@
         "objectName": "sucess"
       },
       {
+        "objectName": "sucess2"
+      },
+      {
         "objectName": "Transparent_Button_With_White_Blue_Border"
+      },
+      {
+        "objectName": "SquareWhiteSlider"
       }
     ]
   },
@@ -263,6 +431,43 @@
           "parameters": [
             "",
             "\"main\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "maxRock",
+            "=",
+            "SquareWhiteSlider.Value()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "8-bit-heaven-26287.mp3",
+            "yes",
+            "70",
             ""
           ]
         }

@@ -324,7 +324,34 @@
           },
           "parameters": [
             "",
-            "\"main\"",
+            "\"start\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "8-bit-video-game-lose-sound-version-1-145828.mp3",
+            "",
+            "80",
             ""
           ]
         }

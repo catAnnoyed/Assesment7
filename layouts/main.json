@@ -1527,7 +1527,6 @@
               "comment": "pickup rocks"
             },
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "rock",
               "conditions": [
@@ -1544,97 +1543,35 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Rocknum",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "rockfollow",
-                    "character.CenterX()",
-                    "character.CenterY()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "rockfollow",
-                    "variable",
-                    "=",
-                    "Rocknum"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "rock",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "rock",
-                    "character",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "i",
-                    "=",
-                    "0"
-                  ]
-                }
-              ],
+              "actions": [],
               "events": [
                 {
-                  "infiniteLoopWarning": true,
-                  "type": "BuiltinCommonInstructions::While",
-                  "whileConditions": [
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "i",
+                        "Rocknum",
                         "<",
-                        "PickedInstancesCount(rock)"
+                        "maxRock"
                       ]
                     }
                   ],
-                  "conditions": [],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "coin-collect-retro-8-bit-sound-effect-145251.mp3",
+                        "",
+                        "80",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "SetNumberVariable"
@@ -1670,22 +1607,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "i",
-                        "+",
-                        "1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
                         "value": "Delete"
                       },
                       "parameters": [
@@ -1693,6 +1614,33 @@
                         ""
                       ]
                     },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "breakflag",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Rocknum",
+                        "=",
+                        "maxRock"
+                      ]
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "SetBooleanVariable"
@@ -1735,19 +1683,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "rock",
-                    "character",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "BooleanVariable"
                   },
                   "parameters": [
@@ -1777,6 +1712,18 @@
                     "rock",
                     "character.CenterX()+5",
                     "character.CenterY()-1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "retro-coin-4-236671.mp3",
+                    "",
+                    "",
                     ""
                   ]
                 }
@@ -1848,7 +1795,7 @@
               "parameters": [
                 "rockfollow",
                 "variable",
-                ">=",
+                ">",
                 "Rocknum"
               ]
             }
@@ -1917,6 +1864,18 @@
             "553",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "gameboy-pluck-41265.mp3",
+            "",
+            "",
+            ""
+          ]
         }
       ]
     },
@@ -1933,7 +1892,6 @@
       "comment": "teleport"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2161,6 +2119,18 @@
             },
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "8-bit-laser-151672.mp3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -2222,6 +2192,18 @@
             "rock",
             "Flash",
             "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "retro-coin-1-236677.mp3",
+            "",
+            "",
             ""
           ]
         },
