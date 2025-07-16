@@ -307,7 +307,7 @@
             },
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
                 "",

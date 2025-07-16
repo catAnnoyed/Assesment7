@@ -404,7 +404,7 @@
           "subInstructions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
                 "",
